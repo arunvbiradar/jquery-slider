@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Custom Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider" style="max-width: 600px;margin: 0 auto;">
+        <div class="slide">
+            <img src="slider-1.jpg" alt="Slider">
+            <div class="caption">
+                <h3>Slider 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="slider-2.jpg" alt="Slider">
+            <div class="caption">
+                <h3>Slider 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="slider-3.jpg" alt="Slider">
+            <div class="caption">
+                <h3>Slider 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="slider-4.jpg" alt="Slider">
+            <div class="caption">
+                <h3>Slider 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="caousel_plugin.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').ajBoxSlider({
+                jsCSS: true,
+                dots: false,
+                autoplay: false,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
+</body>
+</html>
